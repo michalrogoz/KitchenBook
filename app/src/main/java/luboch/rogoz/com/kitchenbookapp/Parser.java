@@ -19,10 +19,6 @@ public class Parser {
         return recipes;
     }
 
-    public void setApplications(ArrayList<KitchenRecipe> recipes) {
-        this.recipes = recipes;
-    }
-
     public Parser(XmlPullParser xpp) {
         this.xpp=xpp;
         //this.xmlData = xmlData;
@@ -37,13 +33,6 @@ public class Parser {
         String textValue = "";
 
         try {
-//            XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
-//            factory.setNamespaceAware(true);
-
-//            Resources res = act
-//            XmlPullParser xpp = getResources().getXml(R.xml.kitchenBook);
-            //XmlPullParser xpp = factory.newPullParser();
-            //xpp.setInput(new StringReader(this.xmlData));
 
             int eventType = xpp.getEventType();
 
@@ -51,7 +40,7 @@ public class Parser {
                 String tagName = xpp.getName();
                 switch (eventType) {
                     case XmlPullParser.START_TAG:
-//                        Log.d("ParseApplications","Starting tag for " + tagName);
+//                        Log.d("ParseRecipes","Starting tag for " + tagName);
                         if (tagName.equalsIgnoreCase("recipe")) {
                             inRecipe = true;
                             currentRecord = new KitchenRecipe();
@@ -66,7 +55,7 @@ public class Parser {
                         break;
 
                     case XmlPullParser.END_TAG:
-//                        Log.d("ParseApplications","Ending tag for " + tagName);
+//                        Log.d("arseRecipes","Ending tag for " + tagName);
                         if (inRecipe) {
                             if (tagName.equalsIgnoreCase("recipe")) {
                                 recipes.add(currentRecord);
@@ -87,7 +76,7 @@ public class Parser {
                             }
                             if(tagName.equalsIgnoreCase("ingriedient")){
                                 currentRecord.addIngredient(textValue);
-                               // Log.d("ParseApplications","Add ingriedient " + textValue);
+                               // Log.d("ParseRecipes","Add ingriedient " + textValue);
                             }
                         }
                         break;
@@ -102,12 +91,12 @@ public class Parser {
         }
 
         for(KitchenRecipe rec : recipes){
-            Log.d("ParseApplications", "*************");
-            Log.d("ParseApplications", "Title " + rec.getTitle());
-            Log.d("ParseApplications", "Aythor " + rec.getAuthor());
-            Log.d("ParseApplications", "Category " + rec.getCategory());
-            Log.d("ParseApplications", "Ingriendients " + rec.getIngredients());
-            Log.d("ParseApplications", "Description: " + rec.getDescription());
+            Log.d("ParseRecipes", "*************");
+            Log.d("ParseRecipes", "Title " + rec.getTitle());
+            Log.d("ParseRecipes", "Author " + rec.getAuthor());
+            Log.d("ParseRecipes", "Category " + rec.getCategory());
+            Log.d("ParseRecipes", "Ingriendients " + rec.getIngredients());
+            Log.d("ParseRecipess", "Description: " + rec.getDescription());
         }
         return true;
     }
