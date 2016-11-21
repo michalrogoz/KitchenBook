@@ -13,6 +13,10 @@ public class KitchenRecipe {
     private ArrayList<String> ingredients;
     private String description;
 
+    public KitchenRecipe(){
+        ingredients = new ArrayList<String>();
+    }
+
     public String getTitle() {
         return title;
     }
@@ -37,8 +41,15 @@ public class KitchenRecipe {
         this.category = category;
     }
 
-    public ArrayList<String> getIngredients() {
-        return ingredients;
+//    public ArrayList<String> getIngredients() {
+//        return ingredients;
+//    }
+    public String getIngredients() {
+        String result = "";
+        for (String ing:ingredients) {
+            result = result + ing + ", ";
+        }
+        return  result;
     }
 
     public void addIngredient(String ingredient){

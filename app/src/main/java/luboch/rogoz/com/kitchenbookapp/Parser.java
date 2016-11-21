@@ -32,7 +32,8 @@ public class Parser {
     public boolean process() {
         boolean status = true;
         KitchenRecipe currentRecord = null;
-        boolean inEntry = false;
+        boolean inRecipe = false;
+        boolean inIngredients = false;
         String textValue = "";
 
         try {
@@ -52,8 +53,11 @@ public class Parser {
                     case XmlPullParser.START_TAG:
 //                        Log.d("ParseApplications","Starting tag for " + tagName);
                         if (tagName.equalsIgnoreCase("recipe")) {
-                            inEntry = true;
+                            inRecipe = true;
                             currentRecord = new KitchenRecipe();
+                        }
+                        if (tagName.equalsIgnoreCase("ingredientList")){
+                            inIngredients = true;
                         }
                         break;
 
@@ -63,18 +67,28 @@ public class Parser {
 
                     case XmlPullParser.END_TAG:
 //                        Log.d("ParseApplications","Ending tag for " + tagName);
-                        if (inEntry) {
+                        if (inRecipe) {
                             if (tagName.equalsIgnoreCase("recipe")) {
                                 recipes.add(currentRecord);
-                                inEntry = false;
+                                inRecipe = false;
                             } else if (tagName.equalsIgnoreCase("title")) {
                                 currentRecord.setTitle(textValue);
                             } else if (tagName.equalsIgnoreCase("author")) {
                                 currentRecord.setAuthor(textValue);
                             } else if (tagName.equalsIgnoreCase("category")){
                                 currentRecord.setCategory(textValue);
+                            } else if (tagName.equalsIgnoreCase("description")){
+                                currentRecord.setDescription(textValue);
                             }
-
+                        }
+                        if (inIngredients){
+                            if(tagName.equalsIgnoreCase("description")){
+                                inIngredients = false;
+                            }
+                            if(tagName.equalsIgnoreCase("ingriedient")){
+                                currentRecord.addIngredient(textValue);
+                                Log.d("ParseApplications","Add ingriedient " + textValue);
+                            }
                         }
                         break;
 
@@ -92,6 +106,8 @@ public class Parser {
             Log.d("ParseApplications", "Title " + rec.getTitle());
             Log.d("ParseApplications", "Aythor " + rec.getAuthor());
             Log.d("ParseApplications", "Category " + rec.getCategory());
+            Log.d("ParseApplications", "Ingriendients " + rec.getIngredients());
+            Log.d("ParseApplications", "Description: " + rec.getDescription());
         }
         return true;
     }

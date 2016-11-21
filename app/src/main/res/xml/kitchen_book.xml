@@ -4,7 +4,7 @@
 		<title>Classic tomato spaghetti</title>
 		<author>Michal</author>
 		<category>Main</category>
-		<!--<ingredientList>
+		<ingredientList>
 			<ingriedient>1 bunch of fresh basil</ingriedient>
 			<ingriedient>1 medium onion</ingriedient>
 			<ingriedient>2 cloves of garlic</ingriedient>
@@ -25,13 +25,13 @@
 9. Once the pasta is done, ladle out and reserve a cup of the cooking water and keep it to one side, then drain in a colander over the sink and tip the spaghetti back into the pot.
 10. Stir the spaghetti into the sauce, adding a splash of the pasta water to loosen, if needed.
 11. Serve with the reserved basil leaves sprinkled over the top and use a microplane to finely grate the Parmesan cheese, then sprinkle over.
-		</description> -->
+		</description>
 	</recipe>	
 	<recipe id ="2">
 		<title>Chocolate cake</title>
 		<author>Michal</author>
 		<category>dessert</category>
-		<!--<ingredientList>
+		<ingredientList>
 			<ingriedient>14 ounces bittersweet chocolate, chopped</ingriedient>
 			<ingriedient>3/4 cup unsalted butter, cubed</ingriedient>
 			<ingriedient>6 egg yolks</ingriedient>
@@ -47,6 +47,6 @@ In a medium bowl, whip egg yolks with half of the sugar (6 tablespoons) until th
 Bake for 45 to 50 minutes in the preheated oven, until the top of the cake is puffed and cracked. A wooden pick inserted into the cake will still have some moist crumbs attached. Cool cake in the pan over a wire rack. The top will fall.
 Place 1 pound of chocolate in a metal bowl. Heat cream to boiling in a saucepan. Pour hot cream over chocolate, and stir until smooth. Bowl may be set over a pan of simmering water if the chocolate is not able to melt completely from the heat of the cream.
 Press down gently on the top of the cake to make it uniformly flat. Remove sides from the cake pan, and invert cake onto a plate. Remove parchment paper from the bottom. Ladle warm ganache over the top, and spread out to cover sides. Wipe drips from the plate, and let stand until set.
-		</description>-->
+		</description>
 	</recipe>	
 </kitchen_book>
