@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<kitchen_book>
+	<recipe id ="1">
+		<title>Classic tomato spaghetti</title>
+		<author>Michal</author>
+		<category>Main</category>
+		<!--<ingredientList>
+			<ingriedient>1 bunch of fresh basil</ingriedient>
+			<ingriedient>1 medium onion</ingriedient>
+			<ingriedient>2 cloves of garlic</ingriedient>
+			<ingriedient>1 kg ripe tomatoes </ingriedient>
+			<ingriedient>olive oil</ingriedient>
+			<ingriedient>480 g dried wholewheat spaghetti</ingriedient>
+			<ingriedient>15 g Parmesan cheese</ingriedient>
+		</ingredientList>
+		<description>Once you’ve made this a few times you can add other simple ingredients, such as baby spinach, chopped rocket leaves, or fresh or frozen peas, to your basic tomato sauce to completely transform it.
+1. Pick the basil leaves onto a chopping board (reserving a few baby leaves to garnish), then roughly chop the remaining leaves and finely chop the stalks.
+2. Peel and finely slice the onion and garlic. If using fresh, cut the tomatoes in half, then roughly chop them or carefully open the tins of tomatoes.
+3. Put a saucepan on a medium heat and add 1 tablespoon of olive oil and the onion, then cook for around 7 minutes, or until soft and lightly golden.
+4. Stir in the garlic and basil stalks for a few minutes, then add the fresh or tinned tomatoes and the vinegar.
+5. Season with a tiny pinch of salt and pepper, then continue cooking for around 15 minutes, stirring occasionally.
+6. Stir in the chopped basil leaves, then reduce to low and leave to tick away. Meanwhile…
+7. Carefully fill a large pot three-quarters of the way up with boiling water, add a tiny pinch of salt and bring back to the boil.
+8. Add the spaghetti and cook according to packet instructions – you want to cook your pasta until it is al dente. This translates as ‘to the tooth’ and means that it should be soft enough to eat, but still have a bit of a bite and firmness to it. Use the timings on the packet instructions as a guide, but try some just before the time is up to make sure it’s perfectly cooked.
+9. Once the pasta is done, ladle out and reserve a cup of the cooking water and keep it to one side, then drain in a colander over the sink and tip the spaghetti back into the pot.
+10. Stir the spaghetti into the sauce, adding a splash of the pasta water to loosen, if needed.
+11. Serve with the reserved basil leaves sprinkled over the top and use a microplane to finely grate the Parmesan cheese, then sprinkle over.
+		</description> -->
+	</recipe>	
+	<recipe id ="2">
+		<title>Chocolate cake</title>
+		<author>Michal</author>
+		<category>dessert</category>
+		<!--<ingredientList>
+			<ingriedient>14 ounces bittersweet chocolate, chopped</ingriedient>
+			<ingriedient>3/4 cup unsalted butter, cubed</ingriedient>
+			<ingriedient>6 egg yolks</ingriedient>
+			<ingriedient>6 egg whites</ingriedient>
+			<ingriedient>3/4 cup white sugar, divided</ingriedient>
+			<ingriedient>2 teaspoons vanilla extract</ingriedient>
+			<ingriedient>1 1/4 cups heavy cream</ingriedient>
+			<ingriedient>1 pound bittersweet chocolate, chopped</ingriedient>						
+		</ingredientList>
+		<description>Preheat the oven to 350 degrees F (175 degrees C). Grease a 9 inch springform pan. Line the bottom of the pan with parchment paper, and then wrap the outside of the pan with aluminum foil.
+Combine 14 ounces of bittersweet chocolate with the butter in a metal bowl over a pan of simmering water. Stir frequently until melted and smooth. Remove from heat, and cool to lukewarm.
+In a medium bowl, whip egg yolks with half of the sugar (6 tablespoons) until thick and pale, about 5 minutes. Fold cooled chocolate into the yolks along with the vanilla and rum. In a separate glass or metal bowl, whip egg whites until foamy. Gradually add remaining sugar while continuing to whip to medium stiff peaks. Fold egg whites into the chocolate mixture in thirds. Pour the batter into the prepared pan.
+Bake for 45 to 50 minutes in the preheated oven, until the top of the cake is puffed and cracked. A wooden pick inserted into the cake will still have some moist crumbs attached. Cool cake in the pan over a wire rack. The top will fall.
+Place 1 pound of chocolate in a metal bowl. Heat cream to boiling in a saucepan. Pour hot cream over chocolate, and stir until smooth. Bowl may be set over a pan of simmering water if the chocolate is not able to melt completely from the heat of the cream.
+Press down gently on the top of the cake to make it uniformly flat. Remove sides from the cake pan, and invert cake onto a plate. Remove parchment paper from the bottom. Ladle warm ganache over the top, and spread out to cover sides. Wipe drips from the plate, and let stand until set.
+		</description>-->
+	</recipe>	
+</kitchen_book>
