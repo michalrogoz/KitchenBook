@@ -63,4 +63,14 @@ public class KitchenRecipe {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    @Override
+    public String toString() {
+        return
+        "Title: " + this.getTitle() + "\n" +
+        "Author: " + this.getAuthor() + "\n" +
+        "Category: " + this.getCategory() + "\n" +
+        "Ingriendients: " + this.getIngredients()+ "\n" +
+        "Description: " + this.getDescription();
+    }
 }

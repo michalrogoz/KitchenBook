@@ -87,7 +87,7 @@ public class Parser {
                             }
                             if(tagName.equalsIgnoreCase("ingriedient")){
                                 currentRecord.addIngredient(textValue);
-                                Log.d("ParseApplications","Add ingriedient " + textValue);
+                               // Log.d("ParseApplications","Add ingriedient " + textValue);
                             }
                         }
                         break;

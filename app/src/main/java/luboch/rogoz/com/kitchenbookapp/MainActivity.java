@@ -6,13 +6,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
 import org.xmlpull.v1.XmlPullParser;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button btnParse;
+    private ListView listRecipes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +33,15 @@ public class MainActivity extends AppCompatActivity {
                 Parser parser = new Parser(xpp);
                 parser.process();
 
+                ArrayAdapter<KitchenRecipe> arrayAdapter = new ArrayAdapter<KitchenRecipe>(
+                         MainActivity.this, R.layout.list_item, parser.getRecipes());
+
+                listRecipes.setAdapter(arrayAdapter);
+
             }
         });
+
+        listRecipes = (ListView) findViewById(R.id.xmlListView);
 
 
 
