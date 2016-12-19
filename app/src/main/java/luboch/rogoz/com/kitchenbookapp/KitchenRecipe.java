@@ -17,6 +17,10 @@ public class KitchenRecipe {
         ingredients = new ArrayList<String>();
     }
 
+    public ArrayList<String> getIngredient(){
+        return ingredients;
+    }
+
     public String getTitle() {
         return title;
     }

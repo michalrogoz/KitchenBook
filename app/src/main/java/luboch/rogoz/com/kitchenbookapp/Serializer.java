@@ -38,40 +38,28 @@ public class Serializer {
             xmlSerializer.text(recipe.getAuthor());
             xmlSerializer.endTag("", "author");
 
+            xmlSerializer.startTag("", "category");
+            xmlSerializer.text(recipe.getCategory());
+            xmlSerializer.endTag("", "category");
+
+            ArrayList<String> ingredients = recipe.getIngredient();
+
+            xmlSerializer.startTag("","ingredientList");
+            for (String ing : ingredients) {
+                xmlSerializer.startTag("", "ingriedient");
+                xmlSerializer.text(ing);
+                xmlSerializer.endTag("", "ingriedient");
+            }
+            xmlSerializer.endTag("","ingredientList");
+
+            xmlSerializer.startTag("", "description");
+            xmlSerializer.text(recipe.getDescription());
+            xmlSerializer.endTag("", "description");
 
             xmlSerializer.endTag("","recipe");
-            i++;        }
-//        // open tag: <study>
-//        xmlSerializer.startTag("", Study.STUDY);
-//        xmlSerializer.attribute("", Study.ID, String.valueOf(study.mId));
-//
-//        // open tag: <topic>
-//        xmlSerializer.startTag("", Study.TOPIC);
-//        xmlSerializer.text(study.mTopic);
-//        // close tag: </topic>
-//        xmlSerializer.endTag("", Study.TOPIC);
-//
-//        // open tag: <content>
-//        xmlSerializer.startTag("", Study.CONTENT);
-//        xmlSerializer.text(study.mContent);
-//        // close tag: </content>
-//        xmlSerializer.endTag("", Study.CONTENT);
-//
-//        // open tag: <author>
-//        xmlSerializer.startTag("", Study.AUTHOR);
-//        xmlSerializer.text(study.mAuthor);
-//        // close tag: </author>
-//        xmlSerializer.endTag("", Study.AUTHOR);
-//
-//        // open tag: <date>
-//        xmlSerializer.startTag("", Study.DATE);
-//        xmlSerializer.text(study.mDate);
-//        // close tag: </date>
-//        xmlSerializer.endTag("", Study.DATE);
-//
-//        // close tag: </study>
-//        xmlSerializer.endTag("", Study.STUDY);
-//        // close tag: </record>
+            i++;
+        }
+
         xmlSerializer.endTag("", "kitchen_book");
 
         // end DOCUMENT
