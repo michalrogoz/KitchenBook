@@ -34,4 +34,12 @@
         android:layout_marginTop="29dp"
         android:id="@+id/xmlListView"
         android:footerDividersEnabled="false" />
+
+    <Button
+        android:text="Add recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnSave" />
 </RelativeLayout>
