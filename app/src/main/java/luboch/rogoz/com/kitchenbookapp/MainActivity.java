@@ -57,8 +57,18 @@ public class MainActivity extends AppCompatActivity {
 
                 Serializer serializer = new Serializer();
                 try {
+
+                    KitchenRecipe recipe = new KitchenRecipe();
+                    recipe.setTitle("Pasta");
+                    recipe.setAuthor("Michal");
+                    recipe.setCategory("italian");
+                    recipe.setDescription("Just do it");
+                    recipe.addIngredient("pasta");
+
+                    recipes.add(recipe);
+
                     String XMLcontent = serializer.process(recipes);
-                    FileOutputStream fOut = openFileOutput("XML.txt", MODE_WORLD_READABLE);
+                    FileOutputStream fOut = openFileOutput("newRecipes.xml", MODE_WORLD_READABLE);
                     OutputStreamWriter osw = new OutputStreamWriter(fOut);
                     osw.write(XMLcontent);
                     osw.close();
